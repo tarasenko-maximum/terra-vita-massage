@@ -1,0 +1,26 @@
+# robots.txt — Terra Vita Massage & Spa
+# https://terravitamassage.rs/
+
+User-agent: *
+Allow: /
+Disallow: /404.html
+Disallow: /thanks.html
+
+# Allow all major crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Yandex
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Sitemap
+Sitemap: https://terravitamassage.rs/sitemap.xml
+
+# Crawl delay for polite bots
+Crawl-delay: 5

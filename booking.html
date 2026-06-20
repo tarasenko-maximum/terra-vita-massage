@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Онлайн-запись на массаж — Terra Vita Massage &amp; Spa | Нови-Сад</title>
+  <meta name="description" content="Запишитесь на массаж в Terra Vita Massage &amp; Spa. Онлайн-форма: выберите услугу, мастера и удобное время. Подтверждение в течение 15 минут." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://terravitamassage.rs/booking.html" />
+  <meta property="og:title" content="Онлайн-запись на массаж — Terra Vita Massage &amp; Spa" />
+  <meta property="og:description" content="Запишитесь на массаж онлайн. Выберите услугу, мастера и время." />
+  <meta property="og:url" content="https://terravitamassage.rs/booking.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://terravitamassage.rs/images/hero-bg.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="ru_RU" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/png" href="images/logo.png" />
+  <link rel="apple-touch-icon" href="images/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { primary: '#2E4A3B', 'primary-hover': '#1E3428', accent: '#C9A96E', 'accent-hover': '#B09050', neutral: '#F7F5F0', 'text-dark': '#2D2D2D' },
+          fontFamily: { heading: ['Playfair Display', 'Georgia', 'serif'], body: ['Inter', 'sans-serif'] },
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
+    <nav class="max-w-7xl mx-auto px-4 lg:px-8">
+      <div class="flex items-center justify-between h-16 lg:h-20">
+        <a href="index.html" class="flex items-center gap-3"><img src="images/logo.png" alt="Terra Vita" class="h-10 w-auto lg:h-12" /><span class="hidden sm:block font-heading text-lg lg:text-xl text-primary font-semibold">Terra Vita</span></a>
+        <div class="hidden lg:flex items-center gap-8">
+          <a href="index.html" class="nav-link text-sm font-medium text-text-dark hover:text-accent">Главная</a>
+          <a href="usluge.html" class="nav-link text-sm font-medium text-text-dark hover:text-accent">Услуги</a>
+          <a href="majstori.html" class="nav-link text-sm font-medium text-text-dark hover:text-accent">Мастера</a>
+          <a href="o-nama.html" class="nav-link text-sm font-medium text-text-dark hover:text-accent">О нас</a>
+          <a href="blog.html" class="nav-link text-sm font-medium text-text-dark hover:text-accent">Блог</a>
+          <a href="kontakt.html" class="nav-link text-sm font-medium text-text-dark hover:text-accent">Контакты</a>
+          <a href="booking.html" class="btn btn-accent btn-sm nav-cta"><i class="fas fa-calendar-check"></i> Записаться</a>
+        </div>
+        <div class="flex items-center gap-3 lg:hidden">
+          <a href="booking.html" class="btn btn-accent btn-sm text-xs px-4 py-2"><i class="fas fa-calendar-check"></i></a>
+          <button id="mobile-menu-btn" class="p-2 text-primary" aria-label="Меню"><i class="fas fa-bars text-xl"></i></button>
+        </div>
+      </div>
+    </nav>
+    <div id="mobile-menu" class="lg:hidden fixed inset-0 bg-white z-40 transform translate-x-full transition-transform duration-300 pt-20">
+      <div class="flex flex-col px-6 py-8 gap-4">
+        <a href="index.html" class="nav-link text-lg font-medium py-3 border-b border-gray-100">Главная</a>
+        <a href="usluge.html" class="nav-link text-lg font-medium py-3 border-b border-gray-100">Услуги</a>
+        <a href="majstori.html" class="nav-link text-lg font-medium py-3 border-b border-gray-100">Мастера</a>
+        <a href="o-nama.html" class="nav-link text-lg font-medium py-3 border-b border-gray-100">О нас</a>
+        <a href="blog.html" class="nav-link text-lg font-medium py-3 border-b border-gray-100">Блог</a>
+        <a href="kontakt.html" class="nav-link text-lg font-medium py-3 border-b border-gray-100">Контакты</a>
+        <a href="booking.html" class="btn btn-accent mt-4 w-full text-center"><i class="fas fa-calendar-check"></i> Записаться</a>
+      </div>
+    </div>
+  </header>
+  <div class="h-16 lg:h-20"></div>
+
+  <div class="bg-neutral border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8 py-3">
+      <div class="breadcrumb"><a href="index.html"><i class="fas fa-home"></i></a><span class="separator">/</span><span class="text-text-dark">Запись</span></div>
+    </div>
+  </div>
+
+  <section class="bg-primary text-white py-16 lg:py-20">
+    <div class="max-w-4xl mx-auto px-4 lg:px-8 text-center fade-in visible">
+      <h1 class="font-heading text-3xl lg:text-5xl mb-4">Запись на приём</h1>
+      <div class="accent-divider"></div>
+      <p class="text-white/80 text-lg max-w-xl mx-auto mt-4">Заполните форму — мы свяжемся с вами в течение 15 минут для подтверждения.</p>
+    </div>
+  </section>
+
+  <section class="section-padding bg-neutral">
+    <div class="max-w-2xl mx-auto px-4 lg:px-8">
+      <form id="booking-form" class="bg-white p-6 lg:p-8 rounded-2xl shadow-sm fade-in" action="https://api.web3forms.com/submit" method="POST">
+        <!-- Web3Forms access key (replace with your own) -->
+        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+        <input type="hidden" name="subject" value="Новая запись на массаж — Terra Vita" />
+        <input type="hidden" name="from_name" value="Terra Vita Booking" />
+        <input type="text" name="_gotcha" class="hidden" style="display:none" />
+
+        <!-- Name -->
+        <div class="mb-5">
+          <label for="name" class="form-label">Имя <span class="text-red-500">*</span></label>
+          <input type="text" id="name" name="name" required minlength="2" placeholder="Ваше имя" class="form-input" />
+        </div>
+
+        <!-- Phone -->
+        <div class="mb-5">
+          <label for="phone" class="form-label">Телефон <span class="text-red-500">*</span></label>
+          <input type="tel" id="phone" name="phone" required placeholder="+381 6X XXX XXXX" class="form-input" />
+          <p class="text-xs text-gray-400 mt-1">Формат: +381 6X XXX XXXX или 06X XXX XXXX</p>
+        </div>
+
+        <!-- Email (optional) -->
+        <div class="mb-5">
+          <label for="email" class="form-label">Email <span class="text-gray-400">(опционально)</span></label>
+          <input type="email" id="email" name="email" placeholder="ваш@email.com" class="form-input" />
+        </div>
+
+        <!-- Service -->
+        <div class="mb-5">
+          <label for="service" class="form-label">Услуга <span class="text-red-500">*</span></label>
+          <div class="select-wrapper">
+            <select id="service" name="service" required class="form-input appearance-none">
+              <option value="">— Выберите услугу —</option>
+              <option value="Классический массаж (60 мин)">Классический массаж (60 мин) — 2500 RSD</option>
+              <option value="Классический массаж (90 мин)">Классический массаж (90 мин) — 3500 RSD</option>
+              <option value="SPA-программа «Релакс» (90 мин)">SPA-программа «Релакс» (90 мин) — 4500 RSD</option>
+              <option value="SPA-программа «Для двоих» (120 мин)">SPA-программа «Для двоих» (120 мин) — 8000 RSD</option>
+              <option value="Лечебный массаж спины (60 мин)">Лечебный массаж спины (60 мин) — 3000 RSD</option>
+              <option value="Лечебный массаж комплексный (90 мин)">Лечебный массаж комплексный (90 мин) — 4500 RSD</option>
+              <option value="Спортивный массаж (60 мин)">Спортивный массаж (60 мин) — 3000 RSD</option>
+              <option value="Стоун-терапия (80 мин)">Стоун-терапия (80 мин) — 4000 RSD</option>
+              <option value="Подарочный сертификат">Подарочный сертификат</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Master -->
+        <div class="mb-5">
+          <label for="master" class="form-label">Мастер <span class="text-red-500">*</span></label>
+          <div class="select-wrapper">
+            <select id="master" name="master" required class="form-input appearance-none">
+              <option value="">— Выберите мастера —</option>
+              <option value="Анна Петрович">Анна Петрович — руководитель, Thai Massage</option>
+              <option value="Марко Йованович">Марко Йованович — лечебный массаж</option>
+              <option value="Елена Попович">Елена Попович — SPA-программы</option>
+              <option value="София Маркович">София Маркович — лимфодренаж, стоун-терапия</option>
+              <option value="Димитрий Савич">Димитрий Савич — спортивный массаж</option>
+              <option value="Никола Танаскович">Никола Танаскович — остеопат</option>
+              <option value="Любой мастер">Любой мастер (на усмотрение салона)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Date -->
+        <div class="mb-5">
+          <label for="date" class="form-label">Дата <span class="text-red-500">*</span></label>
+          <input type="date" id="date" name="date" required class="form-input" />
+        </div>
+
+        <!-- Time -->
+        <div class="mb-5">
+          <label class="form-label">Время <span class="text-red-500">*</span></label>
+          <div id="time-slots" class="time-slots"></div>
+        </div>
+
+        <!-- Comment -->
+        <div class="mb-6">
+          <label for="comment" class="form-label">Комментарий <span class="text-gray-400">(опционально)</span></label>
+          <textarea id="comment" name="comment" rows="3" placeholder="Пожелания, проблемы, зоны воздействия..." class="form-input resize-none"></textarea>
+        </div>
+
+        <!-- Submit -->
+        <button type="submit" class="btn btn-primary w-full text-base">
+          <i class="fas fa-calendar-check"></i> Записаться
+        </button>
+
+        <p class="text-xs text-gray-400 text-center mt-4">
+          Нажимая «Записаться», вы соглашаетесь на обработку персональных данных.
+          Мы свяжемся с вами в течение 15 минут.
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Info -->
+  <section class="section-padding bg-white">
+    <div class="max-w-3xl mx-auto px-4 lg:px-8 text-center fade-in">
+      <h2 class="font-heading text-2xl lg:text-3xl text-primary mb-4">Не любите формы?</h2>
+      <p class="text-gray-600 mb-6">Просто позвоните или напишите нам в мессенджер</p>
+      <div class="flex flex-wrap justify-center gap-3">
+        <a href="tel:+381****4567" class="btn btn-primary text-sm"><i class="fas fa-phone"></i> +381 64 123 45 67</a>
+        <a href="https://wa.me/381641234567" class="btn bg-[#25D366] text-white hover:bg-[#1DA851] text-sm"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        <a href="https://t.me/terravitamassage" class="btn bg-[#0088CC] text-white hover:bg-[#0077B5] text-sm"><i class="fab fa-telegram"></i> Telegram</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-[#1E3428] text-white/80">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8 py-12 lg:py-16">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+        <div><img src="images/logo.png" alt="Terra Vita" class="h-10 w-auto mb-4" /><p class="text-sm text-white/60">Премиальный массажный салон в Нови-Саде.</p></div>
+        <div><h4 class="font-heading text-white text-lg mb-4">Навигация</h4><ul class="space-y-2 text-sm"><li><a href="index.html" class="hover:text-accent">Главная</a></li><li><a href="usluge.html" class="hover:text-accent">Услуги</a></li><li><a href="majstori.html" class="hover:text-accent">Мастера</a></li><li><a href="o-nama.html" class="hover:text-accent">О нас</a></li><li><a href="blog.html" class="hover:text-accent">Блог</a></li><li><a href="kontakt.html" class="hover:text-accent">Контакты</a></li></ul></div>
+        <div><h4 class="font-heading text-white text-lg mb-4">Услуги</h4><ul class="space-y-2 text-sm"><li><a href="usluge.html#classic" class="hover:text-accent">Классический</a></li><li><a href="usluge.html#spa" class="hover:text-accent">SPA</a></li><li><a href="usluge.html#medical" class="hover:text-accent">Лечебный</a></li><li><a href="usluge.html#sport" class="hover:text-accent">Спортивный</a></li><li><a href="usluge.html#stone" class="hover:text-accent">Стоун</a></li><li><a href="usluge.html#gift" class="hover:text-accent">Сертификаты</a></li></ul></div>
+        <div><h4 class="font-heading text-white text-lg mb-4">Контакты</h4><ul class="space-y-3 text-sm"><li class="flex items-start gap-3"><i class="fas fa-map-pin mt-1 text-accent"></i><span>Bulevar Mihajla Pupina 12,<br />Novi Sad</span></li><li class="flex items-center gap-3"><i class="fas fa-phone text-accent"></i><a href="tel:+381****4567" class="hover:text-accent">+381-64-123-4567</a></li></ul></div>
+      </div>
+      <div class="border-t border-white/10 mt-10 pt-8 text-center text-sm text-white/40"><p>&copy; 2026 Terra Vita Massage &amp; Spa.</p></div>
+    </div>
+  </footer>
+  <button id="back-to-top" class="back-to-top" aria-label="Наверх"><i class="fas fa-arrow-up"></i></button>
+  <script src="js/main.js"></script>
+  <script src="js/booking.js"></script>
+  <script src="js/schema.js"></script>
+</body>
+</html>

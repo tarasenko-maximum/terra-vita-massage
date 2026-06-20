@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Услуги массажа в Нови-Саде — Цены | Terra Vita Massage &amp; Spa</title>
+  <meta name="description" content="Полный каталог услуг Terra Vita Massage &amp; Spa: классический, лечебный, спортивный массаж, SPA-программы, стоун-терапия. Цены в RSD и €. Запись онлайн." />
+  <link rel="canonical" href="https://terravitamassage.rs/usluge.html" />
+
+  <meta property="og:title" content="Услуги массажа в Нови-Саде — Цены | Terra Vita Massage &amp; Spa" />
+  <meta property="og:description" content="Классический, лечебный, спортивный массаж, SPA-программы и стоун-терапия. Цены от 1500 RSD. Запись онлайн." />
+  <meta property="og:url" content="https://terravitamassage.rs/usluge.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://terravitamassage.rs/images/hero-bg.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="ru_RU" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Услуги массажа в Нови-Саде — Цены | Terra Vita" />
+  <meta name="twitter:description" content="Премиальный массаж в Нови-Саде. Цены от 1500 RSD." />
+  <meta name="twitter:image" content="https://terravitamassage.rs/images/hero-bg.png" />
+
+  <link rel="icon" type="image/png" href="images/logo.png" />
+  <link rel="apple-touch-icon" href="images/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { primary: '#2E4A3B', 'primary-hover': '#1E3428', accent: '#C9A96E', 'accent-hover': '#B09050', neutral: '#F7F5F0', 'neutral-alt': '#E8E3D8', 'text-dark': '#2D2D2D', 'light-green': '#4A7A5C' },
+          fontFamily: { heading: ['Playfair Display', 'Georgia', 'serif'], body: ['Inter', 'sans-serif'] },
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- ========== NAVBAR ========== -->
+  <header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
+    <nav class="max-w-7xl mx-auto px-4 lg:px-8">
+      <div class="flex items-center justify-between h-16 lg:h-20">
+        <a href="index.html" class="flex items-center gap-3">
+          <img src="images/logo.png" alt="Terra Vita Massage" class="h-10 w-auto lg:h-12" />
+          <span class="hidden sm:block font-heading text-lg lg:text-xl text-primary font-semibold">Terra Vita</span>
+        </a>
+        <div class="hidden lg:flex items-center gap-8">
+          <a href="index.html" class="nav-link text-sm font-medium text-text-dark hover:text-accent transition-colors">Главная</a>
+          <a href="usluge.html" class="nav-link text-sm font-medium text-accent font-semibold transition-colors">Услуги</a>
+          <a href="majstori.html" class="nav-link text-sm font-medium text-text-dark hover:text-accent transition-colors">Мастера</a>
+          <a href="o-nama.html" class="nav-link text-sm font-medium text-text-dark hover:text-accent transition-colors">О нас</a>
+          <a href="blog.html" class="nav-link text-sm font-medium text-text-dark hover:text-accent transition-colors">Блог</a>
+          <a href="kontakt.html" class="nav-link text-sm font-medium text-text-dark hover:text-accent transition-colors">Контакты</a>
+          <a href="booking.html" class="btn btn-accent btn-sm nav-cta font-medium"><i class="fas fa-calendar-check"></i> Записаться</a>
+        </div>
+        <div class="flex items-center gap-3 lg:hidden">
+          <a href="booking.html" class="btn btn-accent btn-sm text-xs px-4 py-2"><i class="fas fa-calendar-check"></i></a>
+          <button id="mobile-menu-btn" class="p-2 text-primary" aria-label="Меню"><i class="fas fa-bars text-xl"></i></button>
+        </div>
+      </div>
+    </nav>
+    <div id="mobile-menu" class="lg:hidden fixed inset-0 bg-white z-40 transform translate-x-full transition-transform duration-300 pt-20">
+      <div class="flex flex-col px-6 py-8 gap-4">
+        <a href="index.html" class="nav-link text-lg font-medium py-3 border-b border-gray-100">Главная</a>
+        <a href="usluge.html" class="nav-link text-lg font-medium py-3 border-b border-gray-100 text-accent font-semibold">Услуги</a>
+        <a href="majstori.html" class="nav-link text-lg font-medium py-3 border-b border-gray-100">Мастера</a>
+        <a href="o-nama.html" class="nav-link text-lg font-medium py-3 border-b border-gray-100">О нас</a>
+        <a href="blog.html" class="nav-link text-lg font-medium py-3 border-b border-gray-100">Блог</a>
+        <a href="kontakt.html" class="nav-link text-lg font-medium py-3 border-b border-gray-100">Контакты</a>
+        <a href="booking.html" class="btn btn-accent mt-4 w-full text-center"><i class="fas fa-calendar-check"></i> Записаться</a>
+      </div>
+    </div>
+  </header>
+  <div class="h-16 lg:h-20"></div>
+
+  <!-- ========== BREADCRUMBS ========== -->
+  <div class="bg-neutral border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8 py-3">
+      <div class="breadcrumb">
+        <a href="index.html"><i class="fas fa-home"></i></a>
+        <span class="separator">/</span>
+        <span class="text-text-dark">Услуги</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== PAGE HEADER ========== -->
+  <section class="bg-primary text-white py-16 lg:py-24">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8 text-center fade-in visible">
+      <h1 class="font-heading text-3xl lg:text-5xl mb-4">Наши услуги</h1>
+      <div class="accent-divider"></div>
+      <p class="text-white/80 text-lg max-w-2xl mx-auto mt-4">
+        От классического массажа до премиальных SPA-программ — каждый найдёт идеальный вариант восстановления.
+      </p>
+    </div>
+  </section>
+
+  <!-- ========== FILTER TABS ========== -->
+  <section class="bg-white py-8 lg:py-10 border-b border-gray-100 sticky top-16 lg:top-20 z-30">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8">
+      <div class="flex flex-wrap gap-3 justify-center" id="service-filters">
+        <button class="filter-btn active btn btn-sm btn-primary" data-filter="all">Все услуги</button>
+        <button class="filter-btn btn btn-sm btn-outline" data-filter="classic">Классический</button>
+        <button class="filter-btn btn btn-sm btn-outline" data-filter="spa">SPA</button>
+        <button class="filter-btn btn btn-sm btn-outline" data-filter="medical">Лечебный</button>
+        <button class="filter-btn btn btn-sm btn-outline" data-filter="sport">Спортивный</button>
+        <button class="filter-btn btn btn-sm btn-outline" data-filter="stone">Стоун-терапия</button>
+        <button class="filter-btn btn btn-sm btn-outline" data-filter="gift">Сертификаты</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES CATALOG ========== -->
+  <section class="section-padding bg-neutral">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8" id="services-grid">
+        <!-- 1. Classic Massage -->
+        <div class="service-card fade-in visible" data-category="classic" id="classic">
+          <div class="h-48 bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center">
+            <i class="fas fa-hand-sparkles text-5xl text-primary"></i>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-3">
+              <span class="price-tag">60 мин</span>
+              <span class="price-tag">от 2500 RSD / €21</span>
+            </div>
+            <h2 class="font-heading text-xl text-primary mb-2">Классический массаж</h2>
+            <p class="text-gray-600 text-sm leading-relaxed mb-4">
+              Глубокое расслабление всех групп мышц. Шведская техника с элементами разминания, 
+              растирания и вибрации. Снимает напряжение и улучшает кровообращение.
+            </p>
+            <ul class="text-xs text-gray-500 space-y-1 mb-4">
+              <li><i class="fas fa-check text-accent mr-1"></i> Снятие мышечного напряжения</li>
+              <li><i class="fas fa-check text-accent mr-1"></i> Улучшение кровообращения</li>
+              <li><i class="fas fa-check text-accent mr-1"></i> Общее расслабление</li>
+            </ul>
+            <div class="flex gap-2">
+              <a href="booking.html?service=классический" class="btn btn-primary btn-sm flex-1 text-center text-xs">Записаться</a>
+              <button onclick="prefillBooking('классический массаж')" class="btn btn-outline btn-sm text-xs">Подробнее</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. SPA Programs -->
+        <div class="service-card fade-in visible delay-1" data-category="spa" id="spa">
+          <div class="h-48 bg-gradient-to-br from-accent/15 to-primary/10 flex items-center justify-center">
+            <i class="fas fa-spa text-5xl text-accent"></i>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-3">
+              <span class="price-tag">90–120 мин</span>
+              <span class="price-tag">от 4500 RSD / €38</span>
+            </div>
+            <h2 class="font-heading text-xl text-primary mb-2">SPA-программы</h2>
+            <p class="text-gray-600 text-sm leading-relaxed mb-4">
+              Эксклюзивные SPA-ритуалы с ароматерапией, скрабированием и обёртыванием. 
+              Ароматерапия от L'Occitane Academy, эфирные масла премиум-класса.
+            </p>
+            <ul class="text-xs text-gray-500 space-y-1 mb-4">
+              <li><i class="fas fa-check text-accent mr-1"></i> Ароматерапия и масла</li>
+              <li><i class="fas fa-check text-accent mr-1"></i> Скрабирование и обёртывание</li>
+              <li><i class="fas fa-check text-accent mr-1"></i> Программа «Для двоих»</li>
+            </ul>
+            <div class="flex gap-2">
+              <a href="booking.html?service=SPA" class="btn btn-primary btn-sm flex-1 text-center text-xs">Записаться</a>
+              <button onclick="prefillBooking('SPA-программы')" class="btn btn-outline btn-sm text-xs">Подробнее</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Medical Massage -->
+        <div class="service-card fade-in visible delay-2" data-category="medical" id="medical">
+          <div class="h-48 bg-gradient-to-br from-primary/15 to-neutral-alt flex items-center justify-center">
+            <i class="fas fa-bone text-5xl text-primary"></i>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-3">
+              <span class="price-tag">60–90 мин</span>
+              <span class="price-tag">от 3000 RSD / €25</span>
+            </div>
+            <h2 class="font-heading text-xl text-primary mb-2">Лечебный массаж</h2>
+            <p class="text-gray-600 text-sm leading-relaxed mb-4">
+              Специализированный массаж при болях в спине, шее, пояснице. 
+              Сочетание классических и мануальных техник. Реабилитация после травм.
+            </p>
+            <ul class="text-xs text-gray-500 space-y-1 mb-4">
+              <li><i class="fas fa-check text-accent mr-1"></i> Боли в спине и шее</li>
+              <li><i class="fas fa-check text-accent mr-1"></i> Реабилитация после травм</li>
+              <li><i class="fas fa-check text-accent mr-1"></i> Мануальная терапия</li>
+            </ul>
+            <div class="flex gap-2">
+              <a href="booking.html?service=лечебный" class="btn btn-primary btn-sm flex-1 text-center text-xs">Записаться</a>
+              <button onclick="prefillBooking('лечебный массаж')" class="btn btn-outline btn-sm text-xs">Подробнее</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Sports Massage -->
+        <div class="service-card fade-in visible" data-category="sport" id="sport">
+          <div class="h-48 bg-gradient-to-br from-accent/10 to-primary/10 flex items-center justify-center">
+            <i class="fas fa-person-running text-5xl text-primary"></i>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-3">
+              <span class="price-tag">60–90 мин</span>
+              <span class="price-tag">от 3000 RSD / €25</span>
+            </div>
+            <h2 class="font-heading text-xl text-primary mb-2">Спортивный массаж</h2>
+            <p class="text-gray-600 text-sm leading-relaxed mb-4">
+              Пред- и послетренировочный массаж для спортсменов. 
+              Проработка глубоких мышц, снятие крепатуры, ускорение восстановления.
+            </p>
+            <ul class="text-xs text-gray-500 space-y-1 mb-4">
+              <li><i class="fas fa-check text-accent mr-1"></i> Предтренировочный разогрев</li>
+              <li><i class="fas fa-check text-accent mr-1"></i> Восстановление после нагрузок</li>
+              <li><i class="fas fa-check text-accent mr-1"></i> Проработка глубоких мышц</li>
+            </ul>
+            <div class="flex gap-2">
+              <a href="booking.html?service=спортивный" class="btn btn-primary btn-sm flex-1 text-center text-xs">Записаться</a>
+              <button onclick="prefillBooking('спортивный массаж')" class="btn btn-outline btn-sm text-xs">Подробнее</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Stone Therapy -->
+        <div class="service-card fade-in visible delay-1" data-category="stone" id="stone">
+          <div class="h-48 bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center">
+            <i class="fas fa-mountain text-5xl text-accent"></i>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-3">
+              <span class="price-tag">80 мин</span>
+              <span class="price-tag">от 4000 RSD / €34</span>
+            </div>
+            <h2 class="font-heading text-xl text-primary mb-2">Стоун-терапия</h2>
+            <p class="text-gray-600 text-sm leading-relaxed mb-4">
+              Массаж горячими базальтовыми камнями. Глубокое прогревание мышц, 
+              снятие хронического напряжения, восстановление энергетического баланса.
+            </p>
+            <ul class="text-xs text-gray-500 space-y-1 mb-4">
+              <li><i class="fas fa-check text-accent mr-1"></i> Горячие базальтовые камни</li>
+              <li><i class="fas fa-check text-accent mr-1"></i> Глубокое прогревание</li>
+              <li><i class="fas fa-check text-accent mr-1"></i> Энергетический баланс</li>
+            </ul>
+            <div class="flex gap-2">
+              <a href="booking.html?service=стоун" class="btn btn-primary btn-sm flex-1 text-center text-xs">Записаться</a>
+              <button onclick="prefillBooking('стоун-терапия')" class="btn btn-outline btn-sm text-xs">Подробнее</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Gift Certificates -->
+        <div class="service-card fade-in visible delay-2" data-category="gift" id="gift">
+          <div class="h-48 bg-gradient-to-br from-accent/20 to-primary/10 flex items-center justify-center">
+            <i class="fas fa-gift text-5xl text-accent"></i>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-3">
+              <span class="price-tag">Любой номинал</span>
+              <span class="price-tag">от 1500 RSD</span>
+            </div>
+            <h2 class="font-heading text-xl text-primary mb-2">Подарочные сертификаты</h2>
+            <p class="text-gray-600 text-sm leading-relaxed mb-4">
+              Идеальный подарок для близких. Выберите номинал или конкретную услугу. 
+              Красивая упаковка и доставка по Нови-Саду бесплатно.
+            </p>
+            <ul class="text-xs text-gray-500 space-y-1 mb-4">
+              <li><i class="fas fa-check text-accent mr-1"></i> Любой номинал</li>
+              <li><i class="fas fa-check text-accent mr-1"></i> Красивая упаковка</li>
+              <li><i class="fas fa-check text-accent mr-1"></i> Бесплатная доставка</li>
+            </ul>
+            <div class="flex gap-2">
+              <a href="booking.html?service=сертификат" class="btn btn-primary btn-sm flex-1 text-center text-xs">Заказать</a>
+              <button onclick="prefillBooking('подарочный сертификат')" class="btn btn-outline btn-sm text-xs">Подробнее</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PRICE TABLE ========== -->
+  <section class="section-padding bg-white">
+    <div class="max-w-4xl mx-auto px-4 lg:px-8">
+      <div class="text-center mb-12 fade-in">
+        <span class="text-accent font-semibold text-sm uppercase tracking-widest">Прайс-лист</span>
+        <h2 class="font-heading text-3xl lg:text-4xl text-primary mt-3 mb-4">Стоимость услуг</h2>
+        <div class="accent-divider"></div>
+      </div>
+
+      <div class="overflow-x-auto fade-in">
+        <table class="w-full text-sm">
+          <thead>
+            <tr class="bg-primary text-white">
+              <th class="text-left py-4 px-4">Услуга</th>
+              <th class="text-center py-4 px-4">Длительность</th>
+              <th class="text-right py-4 px-4">Цена (RSD)</th>
+              <th class="text-right py-4 px-4">Цена (€)</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-200">
+            <tr class="hover:bg-neutral/50 transition-colors">
+              <td class="py-4 px-4 font-medium">Классический массаж</td>
+              <td class="py-4 px-4 text-center text-gray-500">60 мин</td>
+              <td class="py-4 px-4 text-right font-semibold">2 500</td>
+              <td class="py-4 px-4 text-right text-gray-500">€21</td>
+            </tr>
+            <tr class="hover:bg-neutral/50 transition-colors">
+              <td class="py-4 px-4 font-medium">Классический массаж (расширенный)</td>
+              <td class="py-4 px-4 text-center text-gray-500">90 мин</td>
+              <td class="py-4 px-4 text-right font-semibold">3 500</td>
+              <td class="py-4 px-4 text-right text-gray-500">€29</td>
+            </tr>
+            <tr class="hover:bg-neutral/50 transition-colors">
+              <td class="py-4 px-4 font-medium">SPA-программа «Релакс»</td>
+              <td class="py-4 px-4 text-center text-gray-500">90 мин</td>
+              <td class="py-4 px-4 text-right font-semibold">4 500</td>
+              <td class="py-4 px-4 text-right text-gray-500">€38</td>
+            </tr>
+            <tr class="hover:bg-neutral/50 transition-colors">
+              <td class="py-4 px-4 font-medium">SPA-программа «Для двоих»</td>
+              <td class="py-4 px-4 text-center text-gray-500">120 мин</td>
+              <td class="py-4 px-4 text-right font-semibold">8 000</td>
+              <td class="py-4 px-4 text-right text-gray-500">€67</td>
+            </tr>
+            <tr class="hover:bg-neutral/50 transition-colors">
+              <td class="py-4 px-4 font-medium">Лечебный массаж спины</td>
+              <td class="py-4 px-4 text-center text-gray-500">60 мин</td>
+              <td class="py-4 px-4 text-right font-semibold">3 000</td>
+              <td class="py-4 px-4 text-right text-gray-500">€25</td>
+            </tr>
+            <tr class="hover:bg-neutral/50 transition-colors">
+              <td class="py-4 px-4 font-medium">Лечебный массаж (комплексный)</td>
+              <td class="py-4 px-4 text-center text-gray-500">90 мин</td>
+              <td class="py-4 px-4 text-right font-semibold">4 500</td>
+              <td class="py-4 px-4 text-right text-gray-500">€38</td>
+            </tr>
+            <tr class="hover:bg-neutral/50 transition-colors">
+              <td class="py-4 px-4 font-medium">Спортивный массаж</td>
+              <td class="py-4 px-4 text-center text-gray-500">60 мин</td>
+              <td class="py-4 px-4 text-right font-semibold">3 000</td>
+              <td class="py-4 px-4 text-right text-gray-500">€25</td>
+            </tr>
+            <tr class="hover:bg-neutral/50 transition-colors">
+              <td class="py-4 px-4 font-medium">Стоун-терапия</td>
+              <td class="py-4 px-4 text-center text-gray-500">80 мин</td>
+              <td class="py-4 px-4 text-right font-semibold">4 000</td>
+              <td class="py-4 px-4 text-right text-gray-500">€34</td>
+            </tr>
+            <tr class="hover:bg-neutral/50 transition-colors">
+              <td class="py-4 px-4 font-medium">Подарочный сертификат</td>
+              <td class="py-4 px-4 text-center text-gray-500">—</td>
+              <td class="py-4 px-4 text-right font-semibold">от 1 500</td>
+              <td class="py-4 px-4 text-right text-gray-500">от €13</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <section class="section-padding bg-primary text-white text-center">
+    <div class="max-w-3xl mx-auto px-4 lg:px-8 fade-in">
+      <h2 class="font-heading text-3xl lg:text-4xl mb-4">Выберите свою услугу</h2>
+      <p class="text-white/80 text-lg mb-8">Запишитесь онлайн — мы подберём идеальный массаж для вас.</p>
+      <a href="booking.html" class="btn btn-accent text-base"><i class="fas fa-calendar-check"></i> Записаться</a>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="bg-[#1E3428] text-white/80">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8 py-12 lg:py-16">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+        <div>
+          <img src="images/logo.png" alt="Terra Vita" class="h-10 w-auto mb-4" />
+          <p class="text-sm text-white/60">Премиальный массажный салон в Нови-Саде.</p>
+          <div class="flex gap-4 mt-5">
+            <a href="https://instagram.com/terravitamassage" class="text-white/60 hover:text-accent"><i class="fab fa-instagram text-lg"></i></a>
+            <a href="https://t.me/terravitamassage" class="text-white/60 hover:text-accent"><i class="fab fa-telegram text-lg"></i></a>
+            <a href="https://wa.me/381641234567" class="text-white/60 hover:text-accent"><i class="fab fa-whatsapp text-lg"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-heading text-white text-lg mb-4">Навигация</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="hover:text-accent">Главная</a></li>
+            <li><a href="usluge.html" class="hover:text-accent">Услуги</a></li>
+            <li><a href="majstori.html" class="hover:text-accent">Мастера</a></li>
+            <li><a href="o-nama.html" class="hover:text-accent">О нас</a></li>
+            <li><a href="blog.html" class="hover:text-accent">Блог</a></li>
+            <li><a href="kontakt.html" class="hover:text-accent">Контакты</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-heading text-white text-lg mb-4">Услуги</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="usluge.html#classic" class="hover:text-accent">Классический массаж</a></li>
+            <li><a href="usluge.html#spa" class="hover:text-accent">SPA-программы</a></li>
+            <li><a href="usluge.html#medical" class="hover:text-accent">Лечебный массаж</a></li>
+            <li><a href="usluge.html#sport" class="hover:text-accent">Спортивный массаж</a></li>
+            <li><a href="usluge.html#stone" class="hover:text-accent">Стоун-терапия</a></li>
+            <li><a href="usluge.html#gift" class="hover:text-accent">Сертификаты</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-heading text-white text-lg mb-4">Контакты</h4>
+          <ul class="space-y-3 text-sm">
+            <li class="flex items-start gap-3"><i class="fas fa-map-pin mt-1 text-accent"></i><span>Bulevar Mihajla Pupina 12,<br />Novi Sad</span></li>
+            <li class="flex items-center gap-3"><i class="fas fa-phone text-accent"></i><a href="tel:+381****4567" class="hover:text-accent">+381-64-123-4567</a></li>
+            <li class="flex items-center gap-3"><i class="fas fa-envelope text-accent"></i><a href="mailto:info@terravitamassage.rs" class="hover:text-accent">info@terravitamassage.rs</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/10 mt-10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-white/40">
+        <p>&copy; 2026 Terra Vita Massage &amp; Spa. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" class="back-to-top" aria-label="Наверх"><i class="fas fa-arrow-up"></i></button>
+
+  <script src="js/main.js"></script>
+  <script src="js/schema.js"></script>
+  <script>
+    // Service filter
+    document.addEventListener('DOMContentLoaded', function() {
+      var filters = document.querySelectorAll('.filter-btn');
+      var cards = document.querySelectorAll('.service-card');
+      filters.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          filters.forEach(function(b) {
+            b.className = b.className.replace(' btn-primary', '');
+            b.className = b.className.replace('active', '');
+            b.className = b.className.replace('text-white', '');
+            if (!b.className.includes('btn-outline')) b.classList.add('btn-outline');
+          });
+          this.classList.remove('btn-outline');
+          this.classList.add('btn-primary', 'active');
+          var filter = this.getAttribute('data-filter');
+          cards.forEach(function(card) {
+            if (filter === 'all' || card.getAttribute('data-category') === filter) {
+              card.style.display = 'block';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>

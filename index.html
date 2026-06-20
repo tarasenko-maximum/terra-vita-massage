@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terra Vita Massage &amp; Spa — Премиальный массаж в Нови-Саде | Массажный салон</title>
+  <meta name="description" content="Terra Vita Massage &amp; Spa — премиальный массажный салон в Нови-Саде. Классический, лечебный, спортивный массаж и SPA-программы. Запись онлайн." />
+  <meta name="keywords" content="массаж Нови Сад, массажный салон, спа, лечебный массаж, стоун терапия, спортивный массаж, Terra Vita" />
+  <link rel="canonical" href="https://terravitamassage.rs/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Terra Vita Massage &amp; Spa — Премиальный массаж в Нови-Саде" />
+  <meta property="og:description" content="Премиальный массажный салон в Нови-Саде. Классический, лечебный, спортивный массаж и SPA-программы." />
+  <meta property="og:url" content="https://terravitamassage.rs/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://terravitamassage.rs/images/hero-bg.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="ru_RU" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Terra Vita Massage &amp; Spa — Премиальный массаж в Нови-Саде" />
+  <meta name="twitter:description" content="Премиальный массажный салон в Нови-Саде. Классический, лечебный, спортивный массаж и SPA-программы." />
+  <meta name="twitter:image" content="https://terravitamassage.rs/images/hero-bg.png" />
+
+  <!-- JSON-LD Schema (инлайн для AEO — читается без JS) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["LocalBusiness", "MedicalBusiness", "HealthAndBeautyBusiness"],
+    "name": "Terra Vita Massage & Spa",
+    "description": "Премиальный массажный салон в Нови-Саде. Классический, лечебный, спортивный массаж, SPA-программы и стоун-терапия.",
+    "url": "https://terravitamassage.rs",
+    "telephone": "+381-64-123-4567",
+    "logo": "https://terravitamassage.rs/images/logo.png",
+    "image": "https://terravitamassage.rs/images/hero-bg.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Bulevar Mihajla Pupina 12",
+      "addressLocality": "Novi Sad",
+      "addressCountry": "RS"
+    },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      "opens": "10:00",
+      "closes": "21:00"
+    }],
+    "priceRange": "RSD 1500 – 8000"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type":"Question","name":"Какой массаж лучше при боли в спине?","acceptedAnswer":{"@type":"Answer","text":"Рекомендуем лечебный массаж у нашего специалиста Марко Йовановича — физиотерапевта с 10-летним стажем. Запишитесь на консультацию, и мы подберём индивидуальную программу."}},
+      {"@type":"Question","name":"Сколько длится сеанс массажа?","acceptedAnswer":{"@type":"Answer","text":"Стандартный сеанс — 60 минут. Также доступны сеансы 45 минут (экспресс) и 90 минут (расширенный SPA-ритуал)."}},
+      {"@type":"Question","name":"Работаете ли в воскресенье?","acceptedAnswer":{"@type":"Answer","text":"Да, мы работаем по воскресеньям по предварительной записи. Пн–Сб: 10:00–21:00, Вс: по записи."}},
+      {"@type":"Question","name":"Нужно ли с собой что-то приносить?","acceptedAnswer":{"@type":"Answer","text":"Нет, мы предоставляем всё необходимое: полотенца, простыни, массажные масла. Единственная просьба — прийти за 10 минут до сеанса."}},
+      {"@type":"Question","name":"Какие цены на массаж в Нови-Саде?","acceptedAnswer":{"@type":"Answer","text":"Цены от 1500 до 8000 RSD в зависимости от вида массажа и продолжительности. Подарочные сертификаты — от 2000 RSD."}},
+      {"@type":"Question","name":"Есть ли парный массаж для двоих?","acceptedAnswer":{"@type":"Answer","text":"Да, мы предлагаем SPA-программы для пар. Два мастера работают одновременно в одном кабинете. Длительность — 90 минут."}}
+    ]
+  }
+  </script>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/logo.png" />
+  <link rel="apple-touch-icon" href="images/logo.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#2E4A3B',
+            'primary-hover': '#1E3428',
+            accent: '#C9A96E',
+            'accent-hover': '#B09050',
+            neutral: '#F7F5F0',
+            'neutral-alt': '#E8E3D8',
+            'text-dark': '#2D2D2D',
+            'light-green': '#4A7A5C',
+          },
+          fontFamily: {
+            heading: ['Playfair Display', 'Georgia', 'serif'],
+            body: ['Inter', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- ==================== NAVBAR ==================== -->
+  <header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50" role="banner">
+    <nav class="max-w-7xl mx-auto px-4 lg:px-8" role="navigation" aria-label="Основная навигация">
+      <div class="flex items-center justify-between h-16 lg:h-20">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center gap-3" aria-label="Terra Vita Massage &amp; Spa — на главную">
+          <img src="images/logo.png" alt="Terra Vita Massage &amp; Spa логотип" class="h-10 w-auto lg:h-12" />
+          <span class="hidden sm:block font-heading text-lg lg:text-xl text-primary font-semibold tracking-tight">
+            Terra Vita
+          </span>
+        </a>
+
+        <!-- Desktop Nav -->
+        <div class="hidden lg:flex items-center gap-8">
+          <a href="index.html" class="nav-link text-sm font-medium text-text-dark hover:text-accent transition-colors">Главная</a>
+          <a href="usluge.html" class="nav-link text-sm font-medium text-text-dark hover:text-accent transition-colors">Услуги</a>
+          <a href="majstori.html" class="nav-link text-sm font-medium text-text-dark hover:text-accent transition-colors">Мастера</a>
+          <a href="o-nama.html" class="nav-link text-sm font-medium text-text-dark hover:text-accent transition-colors">О нас</a>
+          <a href="blog.html" class="nav-link text-sm font-medium text-text-dark hover:text-accent transition-colors">Блог</a>
+          <a href="kontakt.html" class="nav-link text-sm font-medium text-text-dark hover:text-accent transition-colors">Контакты</a>
+          <a href="booking.html" class="btn btn-accent btn-sm nav-cta font-medium">
+            <i class="fas fa-calendar-check"></i> Записаться
+          </a>
+        </div>
+
+        <!-- Mobile: CTA + Burger -->
+        <div class="flex items-center gap-3 lg:hidden">
+          <a href="booking.html" class="btn btn-accent btn-sm text-xs px-4 py-2">
+            <i class="fas fa-calendar-check"></i>
+          </a>
+          <button id="mobile-menu-btn" class="p-2 text-primary focus:outline-none" aria-label="Открыть меню" aria-expanded="false">
+            <i class="fas fa-bars text-xl"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="lg:hidden fixed inset-0 bg-white z-40 transform translate-x-full transition-transform duration-300 ease-in-out pt-20">
+      <div class="flex flex-col px-6 py-8 gap-4">
+        <a href="index.html" class="nav-link text-lg font-medium py-3 border-b border-gray-100">Главная</a>
+        <a href="usluge.html" class="nav-link text-lg font-medium py-3 border-b border-gray-100">Услуги</a>
+        <a href="majstori.html" class="nav-link text-lg font-medium py-3 border-b border-gray-100">Мастера</a>
+        <a href="o-nama.html" class="nav-link text-lg font-medium py-3 border-b border-gray-100">О нас</a>
+        <a href="blog.html" class="nav-link text-lg font-medium py-3 border-b border-gray-100">Блог</a>
+        <a href="kontakt.html" class="nav-link text-lg font-medium py-3 border-b border-gray-100">Контакты</a>
+        <a href="booking.html" class="btn btn-accent mt-4 w-full text-center">
+          <i class="fas fa-calendar-check"></i> Записаться онлайн
+        </a>
+      </div>
+    </div>
+  </header>
+  <div class="h-16 lg:h-20"></div>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero-overlay min-h-[80vh] lg:min-h-screen flex items-center relative overflow-hidden" role="region" aria-label="Главный экран">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8 py-20 lg:py-32 w-full">
+      <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+        <!-- Hero Text -->
+        <div class="flex-1 text-center lg:text-left fade-in visible">
+          <img src="images/logo.png" alt="Terra Vita Massage &amp; Spa" class="h-16 sm:h-20 lg:h-24 w-auto mx-auto lg:mx-0 mb-6 lg:mb-8" />
+          <h1 class="text-white font-heading text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-4 lg:mb-6">
+            Искусство<br />
+            <span class="text-accent">восстановления</span>
+          </h1>
+          <p class="text-white/85 text-base sm:text-lg lg:text-xl max-w-xl mx-auto lg:mx-0 mb-6 lg:mb-8 leading-relaxed">
+            Премиальный массаж и SPA-ритуалы в центре Нови-Сада. 
+            Восстановите гармонию тела и духа с мастерами высшего уровня.
+          </p>
+          <div class="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
+            <a href="booking.html" class="btn btn-accent text-sm sm:text-base">
+              <i class="fas fa-calendar-check"></i> Записаться
+            </a>
+            <a href="usluge.html" class="btn btn-outline-light text-sm sm:text-base">
+              Наши услуги
+            </a>
+          </div>
+          <!-- Trust badges -->
+          <div class="flex flex-wrap items-center gap-6 mt-8 lg:mt-10 justify-center lg:justify-start text-white/70 text-sm">
+            <span class="flex items-center gap-2"><i class="fas fa-star text-accent"></i> 4.9 ★ 128 отзывов</span>
+            <span class="flex items-center gap-2"><i class="fas fa-clock text-accent"></i> 10:00–21:00</span>
+            <span class="flex items-center gap-2"><i class="fas fa-map-pin text-accent"></i> Нови-Сад</span>
+          </div>
+        </div>
+        <!-- Hero Right (decorative) -->
+        <div class="hidden lg:block flex-1">
+          <div class="relative">
+            <div class="w-80 h-80 xl:w-96 xl:h-96 border-2 border-accent/30 rounded-full mx-auto animate-pulse"></div>
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
+              <i class="fas fa-leaf text-accent text-6xl xl:text-7xl opacity-60"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ADVANTAGES ==================== -->
+  <section class="section-padding bg-white" role="region" aria-label="Наши преимущества">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8">
+      <div class="text-center mb-12 lg:mb-16 fade-in">
+        <span class="text-accent font-semibold text-sm uppercase tracking-widest">Почему выбирают нас</span>
+        <h2 class="font-heading text-3xl lg:text-4xl text-primary mt-3 mb-4">
+          Ваше восстановление — наша миссия
+        </h2>
+        <div class="accent-divider"></div>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Advantage 1 -->
+        <div class="text-center fade-in delay-1">
+          <div class="feature-icon mx-auto mb-5">
+            <i class="fas fa-leaf"></i>
+          </div>
+          <h3 class="font-heading text-xl text-primary mb-3">Натуральные масла</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Используем только органические масла от премиальных европейских брендов. 
+            Никаких синтетических отдушек и парабенов.
+          </p>
+        </div>
+
+        <!-- Advantage 2 -->
+        <div class="text-center fade-in delay-2">
+          <div class="feature-icon mx-auto mb-5">
+            <i class="fas fa-user-md"></i>
+          </div>
+          <h3 class="font-heading text-xl text-primary mb-3">Мастера-профессионалы</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Команда из 6 сертифицированных специалистов с опытом от 5 лет. 
+            Каждый владеет уникальными техниками.
+          </p>
+        </div>
+
+        <!-- Advantage 3 -->
+        <div class="text-center fade-in delay-3">
+          <div class="feature-icon mx-auto mb-5">
+            <i class="fas fa-spa"></i>
+          </div>
+          <h3 class="font-heading text-xl text-primary mb-3">Премиальная атмосфера</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Интерьер в природных тонах, аромалампы с эфирными маслами, 
+            приглушённый свет и расслабляющая музыка.
+          </p>
+        </div>
+
+        <!-- Advantage 4 -->
+        <div class="text-center fade-in delay-1">
+          <div class="feature-icon mx-auto mb-5">
+            <i class="fas fa-clock"></i>
+          </div>
+          <h3 class="font-heading text-xl text-primary mb-3">Гибкий график</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Работаем с 10:00 до 21:00 без выходных. 
+            Возможна запись на раннее утро по запросу.
+          </p>
+        </div>
+
+        <!-- Advantage 5 -->
+        <div class="text-center fade-in delay-2">
+          <div class="feature-icon mx-auto mb-5">
+            <i class="fas fa-gift"></i>
+          </div>
+          <h3 class="font-heading text-xl text-primary mb-3">Подарочные сертификаты</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Идеальный подарок для близких. Любой номинал, 
+            красивая упаковка и доставка по Нови-Саду.
+          </p>
+        </div>
+
+        <!-- Advantage 6 -->
+        <div class="text-center fade-in delay-3">
+          <div class="feature-icon mx-auto mb-5">
+            <i class="fas fa-hand-holding-heart"></i>
+          </div>
+          <h3 class="font-heading text-xl text-primary mb-3">Индивидуальный подход</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Каждый сеанс начинается с консультации. 
+            Мы подбираем технику под ваши потребности и состояние.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== STEPS ==================== -->
+  <section class="section-padding bg-neutral" role="region" aria-label="Как записаться">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8">
+      <div class="text-center mb-12 lg:mb-16 fade-in">
+        <span class="text-accent font-semibold text-sm uppercase tracking-widest">Просто и удобно</span>
+        <h2 class="font-heading text-3xl lg:text-4xl text-primary mt-3 mb-4">
+          Как записаться за 3 шага
+        </h2>
+        <div class="accent-divider"></div>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8 lg:gap-12">
+        <!-- Step 1 -->
+        <div class="text-center fade-in delay-1">
+          <div class="step-number mx-auto mb-5">1</div>
+          <h3 class="font-heading text-xl text-primary mb-3">Выберите услугу</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Просмотрите каталог услуг с подробным описанием и ценами. 
+            Не знаете, что выбрать? Позвоните — мы поможем.
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="text-center fade-in delay-2">
+          <div class="step-number mx-auto mb-5">2</div>
+          <h3 class="font-heading text-xl text-primary mb-3">Выберите мастера и время</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Выберите удобное время и мастера. 
+            Мы покажем все доступные слоты на ближайшие дни.
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="text-center fade-in delay-3">
+          <div class="step-number mx-auto mb-5">3</div>
+          <h3 class="font-heading text-xl text-primary mb-3">Расслабляйтесь</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Приходите за 10 минут до сеанса. 
+            Мы встретим вас, предложим чай и поможем настроиться на релакс.
+          </p>
+        </div>
+      </div>
+
+      <div class="text-center mt-12 fade-in">
+        <a href="booking.html" class="btn btn-primary">
+          <i class="fas fa-calendar-check"></i> Записаться сейчас
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TESTIMONIALS ==================== -->
+  <section class="section-padding bg-white" role="region" aria-label="Отзывы">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8">
+      <div class="text-center mb-12 lg:mb-16 fade-in">
+        <span class="text-accent font-semibold text-sm uppercase tracking-widest">Отзывы</span>
+        <h2 class="font-heading text-3xl lg:text-4xl text-primary mt-3 mb-4">
+          Что говорят наши гости
+        </h2>
+        <div class="accent-divider"></div>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card fade-in delay-1">
+          <div class="flex items-center gap-1 text-accent mb-3">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">
+            Лучший массаж в Нови-Саде! Была на классическом массаже у Анны — невероятное расслабление. 
+            Очень тёплая атмосфера, профессиональный подход. Обязательно вернусь!
+          </p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-semibold text-sm">ЕК</div>
+            <div>
+              <p class="font-semibold text-sm text-text-dark">Екатерина</p>
+              <p class="text-xs text-gray-400">Постоянный клиент</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card fade-in delay-2">
+          <div class="flex items-center gap-1 text-accent mb-3">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">
+            Обращался к Марко с проблемой боли в пояснице. После курса лечебного массажа чувствую себя совершенно другим человеком. 
+            Настоящий профессионал!
+          </p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-semibold text-sm">АС</div>
+            <div>
+              <p class="font-semibold text-sm text-text-dark">Александр</p>
+              <p class="text-xs text-gray-400">Клиент с июня 2025</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card fade-in delay-3">
+          <div class="flex items-center gap-1 text-accent mb-3">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">
+            Была на SPA-программе у Елены — это было волшебно! Ароматерапия, массаж, уход за телом. 
+            Отличный подарок для себя после тяжёлой недели.
+          </p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-semibold text-sm">МР</div>
+            <div>
+              <p class="font-semibold text-sm text-text-dark">Мария</p>
+              <p class="text-xs text-gray-400">Рекомендует друзьям</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FAQ (AEO) ==================== -->
+  <section class="section-padding bg-neutral" role="region" aria-label="Часто задаваемые вопросы">
+    <div class="max-w-3xl mx-auto px-4 lg:px-8">
+      <div class="text-center mb-12 fade-in">
+        <span class="text-accent font-semibold text-sm uppercase tracking-widest">FAQ</span>
+        <h2 class="font-heading text-3xl lg:text-4xl text-primary mt-3 mb-4">
+          Часто задаваемые вопросы
+        </h2>
+        <div class="accent-divider"></div>
+      </div>
+
+      <div class="fade-in">
+        <!-- Q1 -->
+        <div class="faq-item">
+          <button class="faq-question open" aria-expanded="true">
+            Какой массаж лучше всего подходит при болях в спине?
+            <i class="fas fa-chevron-down icon"></i>
+          </button>
+          <div class="faq-answer open">
+            <p>При болях в спине мы рекомендуем лечебный массаж в сочетании с мануальной терапией. Наш специалист Марко Йованович, дипломированный физиотерапевт, проведёт диагностику и подберёт оптимальную программу.</p>
+          </div>
+        </div>
+        <!-- Q2 -->
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Сколько длится один сеанс массажа?
+            <i class="fas fa-chevron-down icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Стандартный сеанс длится 60 минут. Мы также предлагаем экспресс-сеансы (30 минут) и расширенные программы (90 и 120 минут) для SPA-ритуалов.</p>
+          </div>
+        </div>
+        <!-- Q3 -->
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Работаете ли вы в воскресенье?
+            <i class="fas fa-chevron-down icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Да, мы работаем по воскресеньям с 10:00 до 18:00, но только по предварительной записи. Рекомендуем бронировать воскресные визиты заранее.</p>
+          </div>
+        </div>
+        <!-- Q4 -->
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Какие цены на массаж в Terra Vita?
+            <i class="fas fa-chevron-down icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Цены варьируются от 1500 RSD (экспресс-массаж) до 8000 RSD (SPA-программы для двоих). Точную стоимость вы можете посмотреть на странице услуг.</p>
+          </div>
+        </div>
+        <!-- Q5 -->
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Нужна ли предварительная запись?
+            <i class="fas fa-chevron-down icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Да, мы работаем по предварительной записи. Вы можете записаться онлайн через форму на сайте или позвонить нам по телефону +381-64-123-4567.</p>
+          </div>
+        </div>
+        <!-- Q6 -->
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Есть ли противопоказания для массажа?
+            <i class="fas fa-chevron-down icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Да, массаж имеет противопоказания: острые воспалительные процессы, онкологические заболевания, тромбоз, кожные инфекции, беременность (первый триместр). Перед первым визитом мы рекомендуем проконсультироваться с нашим специалистом.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CTA ==================== -->
+  <section class="section-padding bg-primary text-white text-center" role="region" aria-label="Записаться">
+    <div class="max-w-3xl mx-auto px-4 lg:px-8 fade-in">
+      <h2 class="font-heading text-3xl lg:text-4xl mb-4">
+        Готовы к восстановлению?
+      </h2>
+      <p class="text-white/80 text-lg mb-8 max-w-lg mx-auto">
+        Запишитесь онлайн и получите скидку 10% на первое посещение.
+      </p>
+      <a href="booking.html" class="btn btn-accent text-base">
+        <i class="fas fa-calendar-check"></i> Записаться сейчас
+      </a>
+      <p class="text-white/50 text-sm mt-4">
+        Или позвоните: <a href="tel:+381641234567" class="text-accent hover:underline">+381-64-123-4567</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="bg-[#1E3428] text-white/80" role="contentinfo">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8 py-12 lg:py-16">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+        <!-- Brand -->
+        <div class="lg:col-span-1">
+          <img src="images/logo.png" alt="Terra Vita Massage &amp; Spa" class="h-10 w-auto mb-4" />
+          <p class="text-sm leading-relaxed text-white/60">
+            Премиальный массажный салон в Нови-Саде. 
+            Восстановление гармонии тела и духа.
+          </p>
+          <div class="flex gap-4 mt-5">
+            <a href="https://instagram.com/terravitamassage" class="text-white/60 hover:text-accent transition-colors" aria-label="Instagram">
+              <i class="fab fa-instagram text-lg"></i>
+            </a>
+            <a href="https://t.me/terravitamassage" class="text-white/60 hover:text-accent transition-colors" aria-label="Telegram">
+              <i class="fab fa-telegram text-lg"></i>
+            </a>
+            <a href="https://wa.me/381641234567" class="text-white/60 hover:text-accent transition-colors" aria-label="WhatsApp">
+              <i class="fab fa-whatsapp text-lg"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Navigation -->
+        <div>
+          <h4 class="font-heading text-white text-lg mb-4">Навигация</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="hover:text-accent transition-colors">Главная</a></li>
+            <li><a href="usluge.html" class="hover:text-accent transition-colors">Услуги</a></li>
+            <li><a href="majstori.html" class="hover:text-accent transition-colors">Мастера</a></li>
+            <li><a href="o-nama.html" class="hover:text-accent transition-colors">О нас</a></li>
+            <li><a href="blog.html" class="hover:text-accent transition-colors">Блог</a></li>
+            <li><a href="kontakt.html" class="hover:text-accent transition-colors">Контакты</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div>
+          <h4 class="font-heading text-white text-lg mb-4">Услуги</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="usluge.html#classic" class="hover:text-accent transition-colors">Классический массаж</a></li>
+            <li><a href="usluge.html#spa" class="hover:text-accent transition-colors">SPA-программы</a></li>
+            <li><a href="usluge.html#medical" class="hover:text-accent transition-colors">Лечебный массаж</a></li>
+            <li><a href="usluge.html#sport" class="hover:text-accent transition-colors">Спортивный массаж</a></li>
+            <li><a href="usluge.html#stone" class="hover:text-accent transition-colors">Стоун-терапия</a></li>
+            <li><a href="usluge.html#gift" class="hover:text-accent transition-colors">Подарочные сертификаты</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h4 class="font-heading text-white text-lg mb-4">Контакты</h4>
+          <ul class="space-y-3 text-sm">
+            <li class="flex items-start gap-3">
+              <i class="fas fa-map-pin mt-1 text-accent"></i>
+              <span>Bulevar Mihajla Pupina 12,<br />Novi Sad, Serbia</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <i class="fas fa-phone text-accent"></i>
+              <a href="tel:+381641234567" class="hover:text-accent transition-colors">+381-64-123-4567</a>
+            </li>
+            <li class="flex items-center gap-3">
+              <i class="fas fa-envelope text-accent"></i>
+              <a href="mailto:info@terravitamassage.rs" class="hover:text-accent transition-colors">info@terravitamassage.rs</a>
+            </li>
+            <li class="flex items-center gap-3">
+              <i class="fas fa-clock text-accent"></i>
+              <span>Пн–Сб: 10:00–21:00<br />Вс: по записи</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-t border-white/10 mt-10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-white/40">
+        <p>&copy; 2026 Terra Vita Massage &amp; Spa. Все права защищены.</p>
+        <p>Сделано с <i class="fas fa-heart text-accent"></i> в Нови-Саде</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button id="back-to-top" class="back-to-top" aria-label="Наверх">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/schema.js"></script>
+</body>
+</html>
